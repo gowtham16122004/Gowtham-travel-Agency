@@ -1,0 +1,1515 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,700&family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,700&family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Montserrat:wght@700&family=Raleway:wght@700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    margin: 0;
+   
+}
+header {
+    background-color: black;
+    padding: 20px 0;
+    height: 100px; /* Total height of header */
+   
+  
+}
+
+.navbar {
+    height: 60px; /* Height of the navbar */
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Vertically center the content */
+    padding: 20px; /* Add some padding to the left and right */
+}
+
+.navbar .logo1,
+.navbar .logo2 {  /* ✅ Correct Selector */
+    display: block;
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(to right, #6a11cb, #ff6f91);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Poppins', 'Montserrat', 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.navbar .logo1{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -40px;
+  margin-left:  20px; 
+  margin-right: -10px;
+
+  font-weight: 700;
+
+  
+
+}
+.navbar .logo2{
+  font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: -200px; /* Adjust space between the two */
+}
+/* Existing Navbar Styles */
+.navbar nav ul {
+  display: flex;
+  list-style: none; /* Remove bullet points */
+}
+
+.navbar nav ul li {
+  margin: 0 20px; /* Space between navigation items */
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color:white; /* Color of links */
+  transition: color 0.3s linear;
+  padding: 10px; /* Smooth transition for hover effect */
+  margin: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  position: relative; /* Required for the underline effect */
+}
+
+/* New Hover Transition Effect */
+.navbar nav ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: white; /* Underline color */
+  transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), left 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.navbar nav ul li a:hover {
+  color: #6a11cb; /* Deep Purple */
+}
+
+.navbar nav ul li a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+
+
+
+/* Styles for the Sign-up Button */
+.signup-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(37, 37, 37);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  margin-right: -40px;
+}
+
+
+.signup-button:hover {
+  background: rgb(193, 228, 248);
+  color: rgb(33, 0, 85);
+}
+
+
+.signup-button:active {
+  transform: scale(0.97);
+}
+
+.hoverEffect {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hoverEffect div {
+  background: rgb(222, 0, 75);
+  background: linear-gradient(
+    90deg,
+    rgba(222, 0, 75, 1) 0%,
+    rgba(191, 70, 255, 1) 49%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.5;
+}
+
+.signup-button:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Styles for the Login Button */
+.login-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 30px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(37, 37, 37);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  
+}
+
+
+.login-button:hover {
+  background: rgb(193, 228, 248);
+  color: rgb(33, 0, 85);
+}
+
+
+.login-button:active {
+  transform: scale(0.97);
+}
+
+.hoverEffect {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hoverEffect div {
+  background: rgb(222, 0, 75);
+  background: linear-gradient(
+    90deg,
+    rgba(222, 0, 75, 1) 0%,
+    rgba(191, 70, 255, 1) 49%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.5;
+}
+
+.login-button:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.login-button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.login-button .arrow {
+  margin-top: 1px;
+  width: 20px;
+  background: var(--primary-color);
+  height: 4px;
+  position: relative;
+  transition: 0.2s;
+}
+
+.login-button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--primary-color);
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  top: -2px;
+  right: -6px;
+  transition: 0.2s;
+  padding: 5px;
+  transform: rotate(-45deg);
+}
+
+.login-button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.login-button:hover .arrow:before {
+  border-color: var(--secondary-color);
+  right: -4px;
+}
+
+/* From Uiverse.io by Yaya12085 */ 
+.form-container {
+    position: relative; /* Ensures child elements are positioned correctly */
+    width: 320px;
+    max-width: 90%; 
+    margin: 5px auto; /* Centers the form properly */
+    border-radius: 0.75rem;
+    background-color: rgba(17, 24, 39, 1);
+    padding: 2rem;
+    color: rgba(243, 244, 246, 1);
+   
+    justify-content: center;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 450px;
+    padding: auto 10px;
+    display: flex;
+    overflow: hidden;
+    visibility: hidden;
+   
+  }
+  .form-container .active{
+    max-height: 550px;
+  }
+  /* Ensure the popup is hidden initially */
+.form-container {
+  opacity: 0;
+  transform: scale(0.8);
+  visibility: hidden;
+}
+
+
+  .form-container .icon-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.9); /* White background */
+    border-radius: 5%; /* Makes it circular */
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    border-bottom-left-radius: 20px;
+    z-index: 1;
+}
+
+
+.form-container .form-box-login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+   }
+ 
+.form-container.active .form-box-register {
+    transform: translateX(-400%);
+  }
+
+
+.form-container .icon-close:hover {
+    background-color: rgba(255, 255, 255, 1); /* Slightly stronger white on hover */
+}
+
+.form-container .icon-close ion-icon {
+    font-size: 24px;
+    color: black;
+}
+
+
+  
+  .title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+  
+  .form {
+    margin-top: 1.5rem;
+  }
+  
+  .input-group {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .form .input-group label {
+    display: block;
+    color: rgba(156, 163, 175, 1);
+    margin-bottom: 4px;
+  }
+  
+  .form .input-group input {
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(55, 65, 81, 1);
+    outline: 0;
+    background-color: rgba(17, 24, 39, 1);
+    padding: 0.75rem 1rem;
+    color: rgba(243, 244, 246, 1);
+  }
+  
+  .input-group input:focus {
+    border-color: rgba(167, 139, 250);
+  }
+  
+  .forgot {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgba(156, 163, 175,1);
+    margin: 8px 0 14px 0;
+  }
+  
+  .forgot a,.signup a {
+    color: rgba(243, 244, 246, 1);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .forgot a:hover .signup a:hover {
+    text-decoration: underline rgba(167, 139, 250, 1);
+  }
+  
+  .sign {
+    display: block;
+    width: 100%;
+    background-color: rgba(167, 139, 250, 1);
+    padding: 0.75rem;
+    text-align: center;
+    color: rgba(17, 24, 39, 1);
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-top: 15px;
+    
+  }
+  
+  .social-message {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  
+  .line {
+    height: 1px;
+    flex: 1 1 0%;
+    background-color: rgba(55, 65, 81, 1);
+  }
+  
+  .social-message .message {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgba(156, 163, 175, 1);
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons .icon {
+    border-radius: 0.125rem;
+    padding: 0.75rem;
+    border: none;
+    background-color: transparent;
+    margin-left: 8px;
+  }
+  
+  .social-icons .icon svg {
+    height: 1.25rem;
+    width: 1.25rem;
+    fill: #fff;
+  }
+  
+  .signup {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgba(156, 163, 175, 1);
+  }
+
+  
+  .form-container .form-box-register{
+    position: absolute;
+    top: 0;
+    left: 105%;
+    width: 90%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+
+  .form-box-login {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-box-register {
+  position: absolute;
+  transition: none;
+    transform: translateX(200px); /* Initially hidden */
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-container.active .form-box-login {
+    transform: translateX(-400px);
+}
+
+.form-container.active .form-box-register {
+    transform: translateX(0);
+}
+
+
+
+   
+.form-container.active .form-box-register {
+  transition: transform .18s ease ;
+  transform: translate(-320px);
+}
+  
+
+/* Show the popup when active */
+.form-container.active-popup {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+  transition: opacity 0.
+}
+
+.hero-section {
+    width: 100%;
+    height: 90%;
+    background-image: url('img/honeymoon.jpg'); /* Add the background image here */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: -400px;
+    z-index: -1;
+}
+
+.hero-content h1 {
+    margin-top: 40px;
+    font-size: 2.6em;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+}
+.hero-content h3{
+    
+    font-size: 1.5em;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-family: "Sedan SC", serif;
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px 40px 10px 40px; /* Extra padding for space around the icon */
+    font-size: 1em;
+    width: 250px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    background-image: url('img/location.png'); /* Add your image URL */
+    background-size: 20px 20px; /* Size of the image */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Position of the image */
+    font-family: Arial, Helvetica, sans-serif
+    ;
+}
+
+
+.search-bar button {
+    padding: 7px 20px;
+    font-size: 1em;
+    background: linear-gradient(45deg, #3DAEFC 0%, #7B60D1 50%, #A855F7 100%);
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    display: block;
+}
+.search-bar button:hover {
+    background-color:#2563eb;
+    color: white;
+}
+
+.filter-section {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+  color: white; /* White text for contrast */
+  margin: 10px;
+  margin-top: -55px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25); /* Deeper shadow for depth */
+  backdrop-filter: blur(15px); /* Smooth blur effect */
+  -webkit-backdrop-filter: blur(15px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for soft contrast */
+  z-index: 2;
+  
+}
+
+
+
+.filters {
+    display: flex;
+    padding: 0px 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+   
+}
+
+.filter-item {
+    flex: 1;
+    min-width: 180px;
+    padding: 7px; /* Add some padding for spacing */
+    position: relative;
+    border-right: 1px solid #ddd; /* Add the border line */
+    
+}
+
+.filter-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.filter-item select, .filter-item input[type="range"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+/* Input box styles */
+.filter-item input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Glow effect when input is focused */
+.filter-item input:focus {
+  outline: none;
+  border-color: #8e2de2; /* Purple border */
+  box-shadow: 0 0 10px rgba(142, 45, 226, 0.7);
+  animation: glow-animation 1.5s infinite alternate ease-in-out;
+}
+
+/* Pulsing glow animation */
+@keyframes glow-animation {
+  0% {
+      box-shadow: 0 0 5px rgba(142, 45, 226, 0.6);
+  }
+  100% {
+      box-shadow: 0 0 15px rgba(142, 45, 226, 0.9);
+  }
+}
+
+
+.package-options {
+    display: flex;
+    gap: 9px;
+}
+
+.package-options button {
+    padding: 8px;
+    background: rgb(96,9,240);
+    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.package-options button:hover {
+  background: linear-gradient(0deg, rgba(80,0,220,1) 0%, rgba(110,0,230,1) 100%);
+
+color: white;
+}
+
+
+.tour-packages {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.tour-packages h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.tour-packages p {
+    text-align: center;
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.package-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.package-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-container {
+    position: relative;
+}
+.image-container1 {
+    position: relative;
+}
+.image-container1 img {
+    
+        width: 100%;
+        border-radius: 10px;
+    
+}
+.image-container1 p{
+    margin-top: -3px;
+}
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #3b82f6;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.nights {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+    font-size: 0.9em;
+}
+
+.pricing {
+    margin: 1px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+    margin: 2px 0;
+}
+
+.new-price {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: black;
+}
+
+.view-pacakage {
+  background: rgb(96,9,240);
+  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  border: none;
+  color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.view-pacakage :hover {
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+  -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+inset -4px -4px 6px 0 rgba(255,255,255,.2),
+inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+.emi {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.emi a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.emi a:hover {
+    text-decoration: underline;
+}
+
+.hidden-content {
+    display: none; /* Hidden by default */
+    padding: 10px;
+   
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+
+
+footer {
+  background-color: #121212;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.subscribe-section {
+  display: flex;
+  justify-content: space-between;
+  
+  background-color: #f2f2f2;
+  margin-top: -40px;
+  padding: 40px 40px;
+  color: #333;
+}
+
+.subscribe-content {
+  display: flex;
+  align-items: center;
+}
+.subscribe-content h2 {
+ font-size: 2.5em;
+ font-weight: 700;
+ font-family: "Poppins", sans-serif;
+   font-weight: bold;
+   background: linear-gradient(45deg, #3DAEFC 0%, #7B60D1 50%, #A855F7 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.subscribe-content p {
+ display: flex;
+  margin-top: 60px;
+  margin-left: -400px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background: linear-gradient(45deg, #3DAEFC 0%, #7B60D1 50%, #A855F7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subscribe-icon {
+  width: 90px;
+  margin-right: 15px;
+}
+
+.subscribe-form {
+  
+  margin-left: -1000px;
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-form input[type="email"] {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.subscribe-form button {
+  background: linear-gradient(45deg, #3DAEFC 0%, #7B60D1 50%, #A855F7 100%);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #fff;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background: linear-gradient(45deg, #A855F7 0%, #7B60D1 50%, #3DAEFC 100%);
+color: white;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px;
+}
+
+.footer-column {
+  width: 30%;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+
+.footer-column p {
+  margin: 5px 0;
+}
+
+.footer-column ul {
+  list-style-type: none;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+}
+
+/* From Uiverse.io by ahmed150up */
+.social-card {
+  display: flex;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  justify-content: center;
+  margin-left: 450px;
+  margin-bottom: 30px;
+}
+
+.social-card svg {
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.social-icon-instagram,
+.social-icon-twitter,
+.social-icon-discord,
+.social-icon-whatsapp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.social-card svg {
+  transform: scale(1);
+}
+
+/* Instagram Gradient Hover */
+.social-icon-instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  animation: bounce_613 0.4s linear;
+}
+
+/* Twitter Hover */
+.social-icon-twitter:hover {
+  background-color: #00ccff;
+  animation: bounce_613 0.4s linear;
+}
+
+/* Discord Hover */
+.social-icon-discord:hover {
+  background-color: #5865f2;
+  animation: bounce_613 0.4s linear;
+}
+
+/* WhatsApp Hover */
+.social-icon-whatsapp:hover {
+  background-color: #12a50b;
+  animation: bounce_613 0.4s linear;
+}
+
+/* Bounce Animation */
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.copyright {
+  background-color: white; /* Darker background for copyright area */
+  text-align: center;
+  padding: 15px 0;
+  color: black; /* Lighter text color */
+  font-size: 14px;
+  margin-bottom: -50px;
+}
+
+.copyright p {
+  margin: 0;
+}
+
+
+
+
+/* Default Light Mode */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --toggle-bg: #ddd;
+  --toggle-circle: #28292c;
+}
+
+/* Dark Mode */
+.dark-mode {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --toggle-bg: #4a4a4a;
+  --toggle-circle: #ffffff;
+}
+
+/* Default Light Mode */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --toggle-bg: #ddd;
+  --toggle-circle: #28292c;
+}
+
+/* Dark Mode */
+.dark-mode {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --toggle-bg: #4a4a4a;
+  --toggle-circle: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+/* Toggle Switch */
+.theme-toggle {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  justify-content: end;
+  margin-left: 1050px;
+  margin-top: -40px;
+}
+
+.theme-switch {
+  position: absolute;
+  width: 60%;
+  height: 30px;
+  background-color: var(--toggle-bg);
+  border-radius: 25px;
+  cursor: pointer;
+  border: 3px solid var(--toggle-bg);
+  transition: background-color 0.3s;
+}
+
+.theme-checkbox {
+  position: absolute;
+  display: none;
+}
+
+.theme-slider {
+  position: absolute;
+  width: 60%;
+  height: 30%;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.theme-slider::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--toggle-circle);
+  box-shadow: inset 12px -4px 0px 0px var(--toggle-bg);
+  transition: 0.3s;
+}
+
+.theme-checkbox:checked ~ .theme-slider::before {
+  transform: translateX(50px);
+  background-color: var(--toggle-circle);
+  box-shadow: none;
+}
+
+
+.container {
+  margin-top: 50px;
+
+}
+
+/* Toggle Switch */
+.theme-toggle {
+  position: relative;
+  width: 90px;
+  height: 40px;
+}
+
+.theme-switch {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: var(--toggle-bg);
+  border-radius: 25px;
+  cursor: pointer;
+  border: 3px solid var(--toggle-bg);
+  transition: background-color 0.3s;
+}
+
+.theme-checkbox {
+  position: absolute;
+  display: none;
+}
+
+.theme-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.theme-slider::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--toggle-circle);
+  box-shadow: inset 12px -4px 0px 0px var(--toggle-bg);
+  transition: 0.3s;
+}
+
+.theme-checkbox:checked ~ .theme-slider::before {
+  transform: translateX(50px);
+  background-color: var(--toggle-circle);
+  box-shadow: none;
+}
+
+
+/* From Uiverse.io by Yaya12085 */ 
+.gta-card {
+  max-width: 350px;
+  background-color: rgb(7 16 45);
+  background: linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
+  background: -webkit-linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(84 90 106);
+  margin-top: -200px;
+  margin-bottom: 20px;
+}
+
+.gta-small-text, .gta-title, .gta-desc {
+  font-weight: 600;
+}
+
+.gta-title, .gta-desc {
+  margin: 8px 0;
+}
+
+.gta-small-text {
+  color: #488aec;
+  font-size: 14px;
+}
+
+.gta-title {
+  color: #fff;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.gta-desc {
+  color: rgb(151 153 167);
+  font-size: 13px;
+}
+
+.gta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.gta-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 6px;
+  text-decoration: none;
+}
+
+.gta-button:first-child {
+  box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+  background-color: #488aec;
+}
+
+.gta-button:last-child {
+  box-shadow: 0 4px 6px -1px #0b162531, 0 2px 4px -1px #0e192b17;
+  background-color: #fff;
+}
+
+.gta-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.gta-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.gta-icon svg:last-child {
+  fill: #000;
+}
+
+.gta-button-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.gta-button-text span:first-child {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.gta-google span:first-child {
+  color: rgb(219 206 253);
+}
+
+.gta-apple span:first-child {
+  color: rgb(81 87 108);
+}
+
+.gta-google span:last-child {
+  color: #fff;
+  font-weight: 800;
+}
+
+.gta-apple span:last-child {
+  color: #000;
+  font-weight: 800;
+}
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.rating-card {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f0c29;
+  background: linear-gradient(to right bottom, #443e89, #0f0c29);
+  padding: 30px 30px;
+  border-radius: 10px;
+  gap: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.058);
+  margin-left: 500px;
+  margin-top: -250px;
+}
+.text-wrapper {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.text-primary {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.text-secondary {
+  color: #cccccc;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.rating-stars-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.rating-stars-container input {
+  position: absolute;
+  opacity: 0;
+}
+
+.star-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px; /* Adjust width */
+  height: 32px; /* Adjust height */
+  cursor: pointer;
+  
+}
+.star-label svg {
+  fill: rgb(210, 210, 210);
+  margin-left: 10px;
+  width: 20px;
+  display: block;
+  margin-left: 10px;
+  height: auto;
+}
+.rating-stars-container input {
+  appearance: unset;
+}
+.rating-stars-container input:hover + .star-label svg {
+  fill: rgb(255, 204, 185);
+}
+.rating-stars-container input:checked ~ .star-label svg {
+  fill: rgb(255, 102, 47);
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    transform: scale(1.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.socials-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgb(150, 150, 150);
+}
+.social-button {
+  text-decoration: none;
+}
+.social-button svg {
+  width: 15px;
+  fill: rgb(228, 228, 228);
+}
+.social-button:hover svg {
+  fill: rgb(255, 102, 47);
+}
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.card {
+  display: flex;
+  align-items: end;
+  justify-content: left;
+  margin-left: 900px;
+  gap: 10px;
+}
+
+.stats-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100px;
+  height: 90px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  color: #000;
+}
+.heading {
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.bottom-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom-wrapper .star {
+  width: 30px;
+  fill: gold;
+}
+.bottom-wrapper .tag {
+  width: 27px;
+  fill: rgb(141, 214, 32);
+}
+.bottom-wrapper .thumb {
+  width: 27px;
+  fill: blueviolet;
+}
+.bottom-wrapper p {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #000;
+}
+
+
+
+.highlight {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background: linear-gradient(45deg, #3DAEFC 0%, #7B60D1 50%, #A855F7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}

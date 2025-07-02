@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honeymoon package</title>
+    <link rel="stylesheet" href="honeymoon.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <h2 class="logo1">Gowtham</h2>
+            <h3 class="logo2"> Travel Agency</h3>
+            <nav>
+                <ul>
+                    <li><a href="flights/flight.html">Flights</a></li>
+                    <li><a href="hotel/hotel.html">Hotels</a></li>
+                    <li><a href="bus/bus.html">Bus</a></li>
+                    <li><a href="index.html.html">Holidays</a></li>
+                    <li><a href="#">Cabs</a></li>
+                    <li><a href="#">Visa</a></li>
+                </ul>
+            </nav>
+            <!-- Sign-up Button -->
+<button class="signup-button">
+    Sign up
+    <div class="hoverEffect">
+    <div class="arrow-wrapper">
+        <div class="arrow"></div>
+    </div>
+  </div>
+</button>
+
+<!-- Login Button -->
+<button class="login-button">
+    Login
+    <div class="hoverEffect">
+    <div class="arrow-wrapper">
+        <div class="arrow"></div>
+    </div>
+    </div>
+</button>
+
+        </div>
+    </header>
+   
+    
+   <main>
+    <div class="form-container">
+      <span class="icon-close">
+        <ion-icon name="close-outline"></ion-icon>
+      </span>
+
+  
+      <div class="form-box-login">
+      <p class="title">Login</p>
+      <form class="form-box">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="">
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="">
+          <div class="forgot">
+            <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
+          </div>
+        </div>
+        <button class="sign">Sign in</button>
+      </form>
+      <div class="social-message">
+        <div class="line"></div>
+        <p class="message">Login with social accounts</p>
+        <div class="line"></div>
+      </div>
+      <div class="social-icons">
+        <button aria-label="Log in with Google" class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+            <path d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z"></path>
+          </svg>
+        </button>
+        <button aria-label="Log in with Twitter" class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+            <path d="M31.937 6.093c-1.177 0.516-2.437 0.871-3.765 1.032 1.355-0.813 2.391-2.099 2.885-3.631-1.271 0.74-2.677 1.276-4.172 1.579-1.192-1.276-2.896-2.079-4.787-2.079-3.625 0-6.563 2.937-6.563 6.557 0 0.521 0.063 1.021 0.172 1.495-5.453-0.255-10.287-2.875-13.52-6.833-0.568 0.964-0.891 2.084-0.891 3.303 0 2.281 1.161 4.281 2.916 5.457-1.073-0.031-2.083-0.328-2.968-0.817v0.079c0 3.181 2.26 5.833 5.26 6.437-0.547 0.145-1.131 0.229-1.724 0.229-0.421 0-0.823-0.041-1.224-0.115 0.844 2.604 3.26 4.5 6.14 4.557-2.239 1.755-5.077 2.801-8.135 2.801-0.521 0-1.041-0.025-1.563-0.088 2.917 1.86 6.36 2.948 10.079 2.948 12.067 0 18.661-9.995 18.661-18.651 0-0.276 0-0.557-0.021-0.839 1.287-0.917 2.401-2.079 3.281-3.396z"></path>
+          </svg>
+        </button>
+        <button aria-label="Log in with GitHub" class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+            <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"></path>
+          </svg>
+        </button>
+      </div>
+      <p class="signup">Don't have an account?
+        <a rel="noopener noreferrer" href="#" class="register-link">Sign up</a>
+      </p>
+        
+      </p>
+    </div>
+    
+
+
+    <div class="form-box-register">
+      <p class="title">registration</p>
+      <form class="form-box">
+        <div class="input-group">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="">
+          </div>
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" placeholder="">
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="">
+          
+        </div>
+        <button class="sign">Sign in</button>
+      </form>
+      <div class="social-message">
+        <div class="line"></div>
+        <p class="message">Login with social accounts</p>
+        <div class="line"></div>
+      </div>
+      <div class="social-icons">
+        <button aria-label="Log in with Google" class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+            <path d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z"></path>
+          </svg>
+        </button>
+        <button aria-label="Log in with Twitter" class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+            <path d="M31.937 6.093c-1.177 0.516-2.437 0.871-3.765 1.032 1.355-0.813 2.391-2.099 2.885-3.631-1.271 0.74-2.677 1.276-4.172 1.579-1.192-1.276-2.896-2.079-4.787-2.079-3.625 0-6.563 2.937-6.563 6.557 0 0.521 0.063 1.021 0.172 1.495-5.453-0.255-10.287-2.875-13.52-6.833-0.568 0.964-0.891 2.084-0.891 3.303 0 2.281 1.161 4.281 2.916 5.457-1.073-0.031-2.083-0.328-2.968-0.817v0.079c0 3.181 2.26 5.833 5.26 6.437-0.547 0.145-1.131 0.229-1.724 0.229-0.421 0-0.823-0.041-1.224-0.115 0.844 2.604 3.26 4.5 6.14 4.557-2.239 1.755-5.077 2.801-8.135 2.801-0.521 0-1.041-0.025-1.563-0.088 2.917 1.86 6.36 2.948 10.079 2.948 12.067 0 18.661-9.995 18.661-18.651 0-0.276 0-0.557-0.021-0.839 1.287-0.917 2.401-2.079 3.281-3.396z"></path>
+          </svg>
+        </button>
+        <button aria-label="Log in with GitHub" class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+            <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <p class="signup">Already have an account?
+        <a rel="noopener noreferrer" href="#" class="login-link">Sign up</a>
+      </p>
+    </div>
+  </div>
+
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Honeymoon Holiday Packages</h1>
+            <h3>Romantic Getaways for a Lifetime of Memories</h3>
+            <div class="search-bar">
+                
+                <input type="text" placeholder="Honeymoon">
+                <button>Go</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="filter-section">
+        
+
+        <div class="filters">
+            <div class="filter-item">
+                <label for="from-city">From City</label>
+                <select id="from-city">
+                    <option value="new-delhi">New Delhi</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="bangalore">Bangalore</option>
+                </select>
+            </div>
+
+            <div class="filter-item">
+                <label for="sort-by">Sorted By</label>
+                <select id="sort-by">
+                    <option value="">Select</option>
+                    <option value="price">Price</option>
+                    <option value="duration">Duration</option>
+                </select>
+            </div>
+
+            <div class="filter-item">
+                <label for="price-range">Price: <span id="price-value">₹11999</span></label>
+                <input id="price-range" type="range" min="11999" max="177290" step="1000">
+            </div>
+            
+            <div class="filter-item">
+                <label for="duration-range">Duration: <span id="duration-value">2 days</span></label>
+                <input id="duration-range" type="range" min="2" max="8" step="1">
+            </div>
+            
+
+            <div class="filter-item">
+                <label>Package Type</label>
+                <div class="package-options">
+                    <button>With Flights</button>
+                    <button>Without Flights</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tour-packages">
+        <h1><span class="highlight">Honeymoon</span> Tour Packages</h1>
+        <p>Wedding is a special occasion for any individual and so as the honeymoon! In fact, many couples plan their honeymoon and hunt for a perfect destination for the same before wedding. India is a magical land that has great geographical variations from golden deserts to foggy hill stations, tranquil backwaters to sun-kissed beaches and many other locations to make honeymoon period an unforgettable postcard photo moment. Here, we have listed best honeymoon holiday packages for you to choose from. So, don’t wait, plan honeymoon vacation by booking any of the honeymoon tour packages from Gowtham Travel Agency.</p>
+
+        <div class="package-container">
+            <!-- Package 1 -->
+            <div class="package-card">
+                <div class="image-container1">
+                    <img src="img/europe.jpg" alt="Fascinating Europe">
+                    <span class="badge">Recommended</span>
+                    <span class="nights">8 Nights</span>
+                </div>
+                <h2>Fascinating Europe</h2>
+                <p>3N Paris | 3N Switzerland | 1N Innsbruck | 1N Munich</p>
+             
+                <div class="pricing">
+                    <p class="old-price">₹ 216990</p>
+                    <p class="new-price">₹ 177290</p>
+                    <button class="view-pacakage">View Package</button>
+                </div>
+                <p class="emi">No Cost EMI Starts from ₹ 30631 <a href="#">See option</a></p>
+                <div class="hidden-content" id="content-1">
+                    <p>Includes flights, accommodation, and sightseeing. Detailed itinerary available upon request.</p>
+                </div>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="package-card">
+                <div class="image-container">
+                    <img src="img/andaman.jpg" alt="Enjoy Honeymoon in Andaman">
+                    <span class="nights">5 Nights</span>
+                </div>
+                <h2>Enjoy Honeymoon in Andaman</h2>
+                <p>3N Port Blair | 2N Havelock Island</p>
+                
+                <div class="pricing">
+                    <p class="old-price">₹ 40999</p>
+                    <p class="new-price">₹ 35999</p>
+                    <button class="view-pacakage">View Package</button>
+                </div>
+                <p class="emi">No Cost EMI Starts from ₹ 6756 <a href="#">See option</a></p>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="package-card">
+                <div class="image-container">
+                    <img src="img/kerela.jpg" alt="Colourful Kerala">
+                    <span class="nights">5 Nights</span>
+                </div>
+                <h2>Colourful Kerala</h2>
+                <p>1N Cochin | 2N Munnar | 1N Thekkady | 1N Alleppey</p>
+              
+                <div class="pricing">
+                    <p class="old-price">₹ 216990</p>
+                    <p class="new-price">₹ 18599</p>
+                    <button class="view-pacakage">View Package</button>
+                </div>
+                <p class="emi">No Cost EMI Starts from ₹ 3856 <a href="#">See option</a></p>
+            </div>
+        </div>
+       
+    </section>
+      
+<footer>
+    <div class="subscribe-section">
+      <div class="subscribe-content">
+          <img src="img/mail.png"Get Updates" class="subscribe-icon"> <!-- Use a proper icon here -->
+          <h2>Get Updates & More</h2>
+          <p>Thoughtful thoughts to your inbox</p>
+      </div>
+      <form class="subscribe-form">
+          <input type="email" placeholder="Your Email" required>
+          <button type="submit">SUBSCRIBE</button>
+      </form>
+  </div>
+      <div class="footer-main">
+          <div class="footer-column">
+              <h3>Corporate Office</h3>
+              <p>GT Holidays Pvt LTD,</p>
+              <p>Novel Tech Park,</p>
+              <p>Opposite to 1 MG Mall,</p>
+              <p>MG Road, Bangalore – 560042</p>
+              <p>Karnataka, India.</p>
+              <p>Call Us: <strong>+91 9940882200</strong></p>
+          </div>
+  
+          <div class="footer-column">
+              <h3>Head Office</h3>
+              <p>GT Holidays Pvt LTD,</p>
+              <p>No.1, Gemini Parsn,</p>
+              <p>Kodambakkam High Road,</p>
+              <p>Nungambakkam, Chennai – 600006</p>
+              <p>Tamilnadu, India.</p>
+              <p>Email Us: <a href="mailto:mail@gtholidays.in">gowthamph2004@gmail.com</a></p>
+          </div>
+  
+          <div class="footer-column">
+              <h3>Our Branches</h3>
+              <ul>
+                  <li>Mumbai</li>
+                  <li>Hyderabad</li>
+                  <li>Bangalore</li>
+                  <li>Chennai</li>
+                  <li>Coimbatore</li>
+                  <li>Erode</li>
+                  <li>Madurai</li>
+                  <li>Trichy</li>
+                  <li>Salem</li>
+                  <li>Kochi</li>
+                  <li>Vellore</li>
+                  <li>Pondicherry</li>
+                  <li>Nagercoil</li>
+                  <li>Kanyakumari</li>
+              </ul>
+          </div>
+          
+      </div>
+      <!-- From Uiverse.io by vinodjangid07 --> 
+  <div class="rating-card">
+    <div class="text-wrapper">
+      <p class="text-primary">Please Rate Your Experience</p>
+      <p class="text-secondary">to help us serve you better</p>
+    </div>
+  
+    <div class="rating-stars-container">
+      <input value="star-5" name="star" id="star-5" type="radio" />
+      <label for="star-5" class="star-label">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+            pathLength="360"
+          ></path>
+        </svg>
+      </label>
+      <input value="star-4" name="star" id="star-4" type="radio" />
+      <label for="star-4" class="star-label">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+            pathLength="360"
+          ></path>
+        </svg>
+      </label>
+      <input value="star-3" name="star" id="star-3" type="radio" />
+      <label for="star-3" class="star-label">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+            pathLength="360"
+          ></path>
+        </svg>
+      </label>
+      <input value="star-2" name="star" id="star-2" type="radio" />
+      <label for="star-2" class="star-label">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+            pathLength="360"
+          ></path>
+        </svg>
+      </label>
+      <input value="star-1" name="star" id="star-1" type="radio" />
+      <label for="star-1" class="star-label">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+            pathLength="360"
+          ></path>
+        </svg>
+      </label>
+    </div>
+    <div class="socials-container">
+      <a class="social-button" href="#">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+          ></path>
+        </svg>
+      </a>
+      <a class="social-button" href="#">
+        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+          ></path>
+        </svg>
+      </a>
+      <a class="social-button" href="#">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+          ></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+  
+    
+      <!-- From Uiverse.io by Yaya12085 --> 
+  <div class="gta-card">
+    <span class="gta-small-text">Download Now!</span>
+    <span class="gta-title">Download our mobile application.</span>
+    <span class="gta-desc">Download Lorem mobile banking app for iOS &amp; Android to manage your online money.</span>
+    
+    <div class="gta-buttons">
+      <a href="#" class="gta-button">
+        <span class="gta-icon">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 28.9958V4.9125C4 4.07667 4.48167 3.34 5.19 3L19.1442 16.9542L5.19 30.9083C4.48167 30.5542 4 29.8317 4 28.9958ZM23.5642 21.3742L8.32083 30.1858L20.3483 18.1583L23.5642 21.3742ZM28.31 15.2683C28.7917 15.6508 29.1458 16.2458 29.1458 16.9542C29.1458 17.6625 28.8342 18.2292 28.3383 18.6258L25.0942 20.4958L21.5525 16.9542L25.0942 13.4125L28.31 15.2683ZM8.32083 3.7225L23.5642 12.5342L20.3483 15.75L8.32083 3.7225Z" fill="white"></path>
+          </svg>
+        </span>
+        <div class="gta-button-text gta-google">
+          <span>Get it on</span>
+          <span>Google Play</span>
+        </div>
+      </a>
+  
+      <a href="#" class="gta-button">
+        <span class="gta-icon">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26.5058 27.625C25.33 29.3817 24.0833 31.0958 22.185 31.1242C20.2866 31.1667 19.6775 30.005 17.5241 30.005C15.3566 30.005 14.6908 31.0958 12.8916 31.1667C11.0358 31.2375 9.6333 29.2967 8.4433 27.5825C6.0208 24.0833 4.16497 17.6375 6.6583 13.3025C7.8908 11.1492 10.1008 9.78916 12.495 9.74666C14.3083 9.71833 16.0366 10.9792 17.1558 10.9792C18.2608 10.9792 20.3575 9.46333 22.5533 9.68999C23.4741 9.73249 26.0525 10.0583 27.71 12.495C27.5825 12.58 24.6358 14.3083 24.6641 17.8925C24.7066 22.1708 28.4183 23.6017 28.4608 23.6158C28.4183 23.715 27.8658 25.6558 26.5058 27.625ZM18.4166 4.95833C19.4508 3.78249 21.165 2.88999 22.5816 2.83333C22.7658 4.49083 22.1 6.16249 21.1083 7.35249C20.1308 8.55666 18.5158 9.49166 16.9291 9.36416C16.7166 7.73499 17.51 6.03499 18.4166 4.95833Z" fill=""></path>
+          </svg>
+        </span>
+        <div class="gta-button-text gta-apple">
+          <span>Download from</span>
+          <span>App Store</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  
+      <!-- From Uiverse.io by vinodjangid07 --> 
+  <div class="card">
+    <div class="stats-wrapper">
+      <p class="heading">Rating</p>
+      <div class="bottom-wrapper">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="star">
+          <g data-name="Layer 2">
+            <g data-name="star">
+              <rect
+                opacity="0"
+                transform="rotate(90 12 12)"
+                height="24"
+                width="24"
+              ></rect>
+              <path
+                d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+              ></path>
+            </g>
+          </g>
+        </svg>
+        <p class="count">4.5</p>
+      </div>
+    </div>
+    <div class="stats-wrapper">
+      <p class="heading">Review</p>
+      <div class="bottom-wrapper">
+        <svg
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+          class="thumb"
+        >
+          <path
+            d="M472.06 334l-144.16-6.13c-4.61-.36-23.9-1.21-23.9-25.87 0-23.81 19.16-25.33 24.14-25.88L472.06 270c12.67.13 23.94 14.43 23.94 32s-11.27 31.87-23.94 32zM330.61 202.33L437.35 194C450 194 464 210.68 464 227.88v.33c0 16.32-11.14 29.62-24.88 29.79l-108.45-1.73C304 253 304 236.83 304 229.88c0-22.88 21.8-27.15 26.61-27.55zM421.85 480l-89.37-8.93C308 470.14 304 453.82 304 443.59c0-18.38 13.41-24.6 26.67-24.6l91-3c14.54.23 26.32 14.5 26.32 32s-11.67 31.67-26.14 32.01zm34.36-71.5l-126.4-6.21c-9.39-.63-25.81-3-25.81-26.37 0-12 4.35-25.61 25-27.53l127.19-3.88c13.16.14 23.81 13.49 23.81 31.4s-10.65 32.43-23.79 32.58z"
+          ></path>
+          <path
+            fill="none"
+            d="M133.55 238.06A15.85 15.85 0 01126 240a15.82 15.82 0 007.51-1.92zM174.14 168.78l.13-.23-.13.23c-20.5 35.51-30.36 54.95-33.82 62 3.47-7.07 13.34-26.51 33.82-62z"
+          ></path>
+          <path
+            d="M139.34 232.84l1-2a16.27 16.27 0 01-6.77 7.25 16.35 16.35 0 005.77-5.25z"
+          ></path>
+          <path
+            d="M316.06 52.62C306.63 39.32 291 32 272 32a16 16 0 00-14.31 8.84c-3 6.07-15.25 24-28.19 42.91-18 26.33-40.35 59.07-55.23 84.8l-.13.23c-20.48 35.49-30.35 54.93-33.82 62l-1 2a16.35 16.35 0 01-5.79 5.22 15.82 15.82 0 01-7.53 2h-25.31A84.69 84.69 0 0016 324.69v38.61a84.69 84.69 0 0084.69 84.7h48.79a17.55 17.55 0 019.58 2.89C182 465.87 225.34 480 272 480c7.45 0 14.19-.14 20.27-.38a8 8 0 006.2-12.68l-.1-.14C289.8 454.41 288 441 288 432a61.2 61.2 0 015.19-24.77 17.36 17.36 0 000-14.05 63.81 63.81 0 010-50.39 17.32 17.32 0 000-14 62.15 62.15 0 010-49.59 18.13 18.13 0 000-14.68A60.33 60.33 0 01288 239c0-8.2 2-21.3 8-31.19a15.63 15.63 0 001.14-13.64c-.38-1-.76-2.07-1.13-3.17a24.84 24.84 0 01-.86-11.58c3-19.34 9.67-36.29 16.74-54.16 3.08-7.78 6.27-15.82 9.22-24.26 6.14-17.57 4.3-35.2-5.05-48.38z"
+          ></path>
+        </svg>
+        <p class="count">1.1k</p>
+      </div>
+    </div>
+    <div class="stats-wrapper">
+      <p class="heading">Customers</p>
+      <div class="bottom-wrapper">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="tag">
+          <path
+            d="M448 183.8v-123A44.66 44.66 0 00403.29 16H280.36a30.62 30.62 0 00-21.51 8.89L13.09 270.58a44.86 44.86 0 000 63.34l117 117a44.84 44.84 0 0063.33 0l245.69-245.61A30.6 30.6 0 00448 183.8zM352 144a32 32 0 1132-32 32 32 0 01-32 32z"
+          ></path>
+          <path
+            d="M496 64a16 16 0 00-16 16v127.37L218.69 468.69a16 16 0 1022.62 22.62l262-262A29.84 29.84 0 00512 208V80a16 16 0 00-16-16z"
+          ></path>
+        </svg>
+        <p class="count">6.1k</p>
+      </div>
+    </div>
+  </div>
+   
+  
+  <!-- From Uiverse.io by ahmed150up -->
+  <div class="social-card">
+    <a class="social-icon-instagram">
+      <svg viewBox="0 0 16 16" class="bi bi-instagram" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: white"> 
+        <path fill="white" d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> 
+      </svg>
+    </a>
+    <a class="social-icon-twitter">
+      <svg viewBox="0 0 16 16" class="bi bi-twitter" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: white"> 
+        <path fill="white" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path> 
+      </svg>
+    </a>
+    <a class="social-icon-discord">
+      <svg viewBox="0 0 16 16" class="bi bi-discord" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: white">
+        <path fill="white" d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"></path>
+      </svg>
+    </a>
+    <a class="social-icon-whatsapp">
+      <svg viewBox="0 0 16 16" class="bi bi-whatsapp" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: white">
+        <path fill="white" d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+      </svg>
+    </a>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- From Uiverse.io by Madflows --> 
+  
+    
+      <div class="copyright">
+          <p>&copy; 2024 Gowtham Agency. All Rights Reserved.</p>
+      </div>
+  
+      
+  </footer>
+  
+    
+    
+  
+      <!-- JavaScript -->
+      <script src="honeymoon.js"></script>
+      <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.esm.js"></script>
+      <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.js"></script>
+      
+  </body>
+  </html>
+  
